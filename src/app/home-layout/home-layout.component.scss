@@ -1,0 +1,165 @@
+.content {
+  background-color: #0a192f;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  min-height: 100%;
+  width: 100%;
+  background-color: #0a192f;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+  width: 55%;
+
+}
+
+.logo{
+  display: grid;
+  place-items: center;
+  width: 50%;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  color: white;
+  background-color: var(--primary-color);
+  h1{
+    letter-spacing: 5px;
+  }
+
+}
+.form {
+  min-width: 50%;
+
+}
+
+
+.login-form{
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+.error{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: red;
+}
+
+.heading{
+  color:  var(--primary-color);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: var(--normal-heading);
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.input {
+  margin-bottom: 30px;
+}
+
+.input > .item:first-child{
+  margin-bottom: 10px;
+}
+
+.input > .item{
+  width: 100%;
+  height: 60px;
+  font-size: var(--input-font-size);
+  border-radius: 10px;
+  border: none;
+  transition: 0.6s;
+}
+
+.input > item:focus{
+  outline: none;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.submit{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit > button{
+  border-radius: 10px;
+  background-color: green;
+  height: 40px;
+  width: 30%;
+}
+
+.signup {
+  text-align:center;
+  color: rgb(73, 71, 71);
+  letter-spacing: 1px;
+  transition: 3s;
+}
+
+.signup :hover{
+  cursor: pointer;
+  color: black;
+}
+
+.spinner{
+  display: grid;
+  place-items: center;
+}
+
+.text {
+  h4 {
+    margin: 0px 0px 30px 4px;
+    color: #64ffda;
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fz-sm),5vw,var(--fz-md));
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+  }
+  h1 {
+    margin: 0px;
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: 600;
+    color: #ccd6f6;
+    letter-spacing: 5px;
+    line-height: 1.1;
+  }
+  h2 {
+    margin-top: 25px;
+    color: #8892b0;
+    line-height: 0.9;
+    font-size: 40px;
+  }
+  .github {
+    letter-spacing: 2px;
+  }
+  p {
+    margin: 20px 0px 0px;
+    max-width: 540px;
+    color: #8892b0;
+    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  }
+}

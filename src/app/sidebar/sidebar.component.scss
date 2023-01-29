@@ -1,0 +1,107 @@
+.parent {
+  position: fixed;
+  height: 100%;
+  width: 110px;
+  display: grid;
+  align-content: space-between;
+  // box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+}
+.a:hover{background-color: white; color: red;}
+.bottom {
+  margin-bottom: 30px
+}
+
+.head-icon-box{
+  background-color: white;
+  flex: 1 1 80px;
+  display: grid;
+  place-items: center;
+  margin: 5px;
+  height: 100px;
+  color: var(--primary-color);
+  font-weight: 200;
+  margin-bottom: 20px;
+
+}
+
+.head-icon{
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: #F5F7FD;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  transition: 0.7s;
+}
+
+.head-icon-box:hover{
+  .head-icon{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #FEE031;
+  }
+}
+
+.mat-icon{
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+}
+
+.icon-box {
+
+  display: grid;
+  place-items: center;
+  margin: 5px;
+  height: 75px;
+  width: 100%;
+  color: var(--primary-color);
+  font-weight: 200;
+
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  // width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  transition: 0.7s;
+}
+
+.icon-box:hover{
+  mat-icon, .icon-text {
+    color: #64ffda;
+    letter-spacing: 1px;
+  }
+}
+
+.mat-icon, .icon-text{
+
+  color: white
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.active-link {
+  .mat-icon, .icon-text {
+    color: #64ffda;
+    font-weight: 400;
+  }
+
+}
+
+.spacer{
+  flex: 1 1 auto;
+}
+
+.label{
+  font-size: 13px;
+}
