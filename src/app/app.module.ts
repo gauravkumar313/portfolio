@@ -13,7 +13,11 @@ import { SkillComponent } from './skill/skill.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgSelectModule } from '@ng-select/ng-select';
-
+import { DataAnalysisComponent } from './experience/data-analysis/data-analysis.component';
+import { DataScienceComponent } from './experience/data-science/data-science.component';
+import { DatabaseComponent } from './experience/database/database.component';
+import { WebServiceComponent } from './experience/web-service/web-service.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -24,13 +28,18 @@ import { NgSelectModule } from '@ng-select/ng-select';
     ExperienceComponent,
     SkillComponent,
     ProjectComponent,
-    ContactComponent
+    ContactComponent,
+    DataAnalysisComponent,
+    DataScienceComponent,
+    DatabaseComponent,
+    WebServiceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
     MatIconModule,
+    MatTabsModule,
     NgSelectModule
   ],
   providers: [],

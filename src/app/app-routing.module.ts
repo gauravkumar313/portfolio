@@ -6,6 +6,10 @@ import { ExperienceComponent } from './experience/experience.component';
 import { SkillComponent } from './skill/skill.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactComponent } from './contact/contact.component';
+import { DataAnalysisComponent } from './experience/data-analysis/data-analysis.component';
+import { DataScienceComponent } from './experience/data-science/data-science.component';
+import { DatabaseComponent } from './experience/database/database.component';
+import { WebServiceComponent } from './experience/web-service/web-service.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
@@ -19,7 +23,14 @@ const routes: Routes = [
   },
   {
     path: 'experience',
-    component: ExperienceComponent
+    component: ExperienceComponent,
+    children: [
+      { path: '', pathMatch: 'full', redirectTo: 'experience/data-analysis' },
+      { path: 'data-analysis', component: DataAnalysisComponent },
+      { path: 'data-science', component: DataScienceComponent },
+      { path: 'database', component: DatabaseComponent },
+      { path: 'web-service', component: WebServiceComponent }
+    ]
   },
   {
     path: 'skill',
